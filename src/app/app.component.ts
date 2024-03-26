@@ -6,12 +6,17 @@ import {RouterModule} from "@angular/router";
   // name of CSS component
   selector: 'app-root',
 
-  // todo: search -> what mean ?
+  /**
+   * if standalone: false; -> need to: Angular module dependency '@ngModule'
+   */
+  // standalone: false,
+
+  //component is declared independently...
   standalone: true,
 
   // Decorator metadata
   imports: [HomeComponent,
-            RouterModule],
+    RouterModule],
 
   /**
    * using templateUrl
